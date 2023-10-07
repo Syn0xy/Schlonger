@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const cron = require('node-cron');
 const fs = require('fs');
-let rawdata = fs.readFileSync('config.json');
+let rawdata = fs.readFileSync('./res/config.json');
 let config = JSON.parse(rawdata);
 
 const TOKEN = config.token;
